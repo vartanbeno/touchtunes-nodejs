@@ -1,0 +1,25 @@
+{
+  "name": "touchtunes-nodejs",
+  "version": "1.0.0",
+  "description": "This repository is used to complete the NodeJS coding test given out to TouchTunes applicants.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vartanbeno/touchtunes-nodejs.git"
+  },
+  "author": "Vartan Benohanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vartanbeno/touchtunes-nodejs/issues"
+  },
+  "homepage": "https://github.com/vartanbeno/touchtunes-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1"
+  }
+}
