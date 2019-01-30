@@ -1,21 +1,4 @@
-import Setting from '../models/setting';
-import Component from '../models/component';
-
-const settings = [
-    new Setting('Mixer', ['audio', 'pcb']),
-    new Setting('AttractLoop'),
-    new Setting('Volume', ['audio']),
-    new Setting('Amplifier', ['audio', 'resistor']),
-    new Setting('Brightness', ['LED array']),
-    new Setting('Language'),
-    new Setting('Bluetooth', ['mobile device'])
-];
-
-const components = [
-    new Component('audio'),
-    new Component('LED array'),
-    new Component('pcb')
-];
+import { components, settings } from '../utils/constants';
 
 export const getSettings = (req, res) => {
     return res.status(200).send(settings);
