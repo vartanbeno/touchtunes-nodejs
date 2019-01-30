@@ -4,9 +4,10 @@
   "description": "This repository is used to complete the NodeJS coding test given out to TouchTunes applicants.",
   "main": "src/index.mjs",
   "scripts": {
-    "start": "node --experimental-modules src/index.mjs",
+    "build": "babel ./src --out-dir dist",
+    "start": "npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint **/*.mjs"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.12.1"
   }
 }
