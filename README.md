@@ -4,30 +4,13 @@ This repository is used to complete the NodeJS coding test given out to TouchTun
 
 ## Getting Started
 
-NodeJS currently doesn't support ES6 modules, i.e.:
-
-```
-// bad
-import express from 'express';
-
-// good
-const express = require('express');
-```
-
-They will support it eventually. The workaround is to use the `--experimental-modules` option with the `node` command, and use the `.mjs` extension for any files using ES6 import statements.
-
 ### Running
-
-```
-cd src
-node --experimental-modules index.mjs
-```
-
-Or simply:
 
 ```
 npm start
 ```
+
+This will build the application by transpiling the ES6 code and outputting the files into a `dist` directory, and run the `index.js` file from there.
 
 ### Docker
 
