@@ -19,7 +19,7 @@ export const getComponents = (req, res) => {
 
 export const getSettingsFiltered = (req, res) => {
     try {
-        return res.status(200).send(filterSettings(settings));
+        return res.status(200).send(filterSettings(components, settings));
     } catch (e) {
         return res.status(500).send({ e });
     }
