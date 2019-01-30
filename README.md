@@ -13,6 +13,12 @@ npm start
 
 This will build the application by transpiling the ES6 code and outputting the files into a `dist` directory, and run the `index.js` file from there.
 
+Run tests with Jest by running the following command:
+
+```
+npm test
+```
+
 ### Docker
 
 ```
