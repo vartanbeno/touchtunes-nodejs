@@ -23,6 +23,12 @@ cd src
 node --experimental-modules index.mjs
 ```
 
+Or simply:
+
+```
+npm start
+```
+
 ### Docker
 
 ```
